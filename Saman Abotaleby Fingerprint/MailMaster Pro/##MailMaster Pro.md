@@ -1,0 +1,4 @@
+
+Project Name: MailMaster Pro
+Description:
+MailMaster Pro is an advanced email composition and management tool designed to streamline the process of writing, saving, and sending emails. With an intuitive interface and robust functionality, MailMaster Pro allows users to easily add multiple recipients, save and load email templates, and manage their email composition efficiently. The tool is equipped with a user-friendly modal guide to help new users get started and offers features like saving email templates for future use, adding additional recipients seamlessly, and sending emails directly from the platform. MailMaster Pro enhances productivity and ensures a smooth email composition experience.

@@ -1,0 +1,3 @@
+Project Name: ImageVault Pro
+Description:
+ImageVault Pro is an advanced image gallery tool that allows users to upload, name, and save their images effortlessly. With a sleek and modern interface, ImageVault Pro enables users to manage their image collections conveniently. Images are stored in the browser's local storage, ensuring they are available across sessions without the need for server-side storage. This tool is perfect for photographers, designers, or anyone looking to organize and showcase their images with ease.

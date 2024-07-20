@@ -1,0 +1,4 @@
+
+Project Name:  Inventory Manager
+Description:
+ Inventory Manager is a comprehensive and user-friendly system designed to efficiently manage your inventory. With features that allow users to switch between themes, manage products, track inventory levels, and export data, this system ensures smooth and effective inventory control. Users are greeted with an introductory popup, can select product categories, and perform actions like adding or subtracting quantities, exporting data, and clearing stored information. The modern interface and robust functionalities make it an ideal tool for both small and large inventory management needs.

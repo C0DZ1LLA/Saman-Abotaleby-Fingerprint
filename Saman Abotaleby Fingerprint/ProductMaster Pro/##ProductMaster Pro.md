@@ -1,0 +1,3 @@
+Project Name: ProductMaster Pro
+Description:
+ProductMaster Pro is an all-in-one inventory management and productivity tool designed to streamline product tracking, calculations, and note-taking for businesses. Featuring a robust product management system, users can add and edit product details such as name, quantity, bulk price, and retail price. The integrated calculator allows for quick arithmetic operations, including VAT calculations. ProductMaster Pro also includes a note-saving feature, enabling users to store and manage important notes. With its intuitive interface and advanced functionalities, ProductMaster Pro helps businesses maintain organized and efficient operations.

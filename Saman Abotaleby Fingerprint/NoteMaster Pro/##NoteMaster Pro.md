@@ -1,0 +1,3 @@
+Project Name: NoteMaster Pro
+Description:
+NoteMaster Pro is an advanced note-taking and formatting tool designed to enhance productivity and organization. Featuring a robust set of text editing options, users can format their notes with bold, italics, underline, and more, as well as insert images and links. NoteMaster Pro allows users to save and manage their notes efficiently, with options to export data as ZIP files for easy backup and sharing. The tool includes a popup welcome guide, making it user-friendly for both new and experienced users. It also offers features like spell check, find and replace, and category-based note filtering to streamline the note-taking process.

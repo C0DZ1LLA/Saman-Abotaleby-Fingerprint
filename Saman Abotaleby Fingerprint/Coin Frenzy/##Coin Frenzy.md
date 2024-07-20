@@ -1,0 +1,3 @@
+Project Name:  Coin Frenzy
+Description:
+ Coin Frenzy is an exhilarating clicker game where players tap a delightful hamster to earn coins. These coins can be used to upgrade various aspects of the game, including the amount of coins earned per tap, the recharge speed for taps, and the maximum number of available taps. Players can also invest in profit items that generate passive income over time. The ultimate goal is to reach level 1000 in each category within a year. The game features a user-friendly interface with a sleek, modern design, ensuring an enjoyable experience for players of all ages. Progress is saved, allowing players to continue their journey towards becoming the ultimate  coin master.

@@ -1,0 +1,3 @@
+Project Name: Futurify - Futuristic Content Composer
+Description:
+Futurify is an advanced content creation tool designed for the modern era, allowing users to compose and integrate various types of multimedia content seamlessly. Whether you need to craft text, insert images, embed videos, add rich text, link to web pages, or embed audio files, Futurify provides an intuitive and interactive interface to manage all your content creation needs. With features like content exportation and a dynamic modal input system, Futurify ensures that your content creation process is both efficient and engaging.

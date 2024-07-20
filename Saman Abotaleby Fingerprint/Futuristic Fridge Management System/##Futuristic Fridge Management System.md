@@ -1,0 +1,3 @@
+Project Name: Futuristic Fridge Management System
+Description:
+The Futuristic Fridge Management System is an advanced tool designed to efficiently manage and monitor multiple fridges. Users can add, modify, and delete fridge entries while keeping track of key information such as temperatures, capacity, and power consumption. The system also logs all changes to temperatures, providing a comprehensive temperature log that can be exported as a CSV file for further analysis. This innovative tool ensures streamlined fridge management and robust data tracking in a modern and user-friendly interface.

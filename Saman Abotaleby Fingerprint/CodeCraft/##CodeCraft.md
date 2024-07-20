@@ -1,0 +1,3 @@
+Project Name:  CodeCraft
+Description:
+ CodeCraft is a cutting-edge live code editor that allows users to write and preview HTML, CSS, and JavaScript code in real time. With an intuitive interface, users can easily insert common tags, run their code, and view the output instantly. Additional features include saving and loading code, a variety of predefined HTML elements, and a modern, responsive design that adapts to any screen size. Whether you're a beginner learning to code or a seasoned developer,  CodeCraft provides a powerful and immersive coding experience.

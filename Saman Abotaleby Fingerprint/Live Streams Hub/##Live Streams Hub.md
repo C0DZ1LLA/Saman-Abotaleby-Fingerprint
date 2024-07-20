@@ -1,0 +1,3 @@
+Project Name:  Live Streams Hub
+Description:
+ Live Streams Hub is a dynamic platform where you can join live streams on Kick.com and Twitch, interact with the community, and stay updated on the latest happenings. While the site is under construction, you can still enjoy the streams, chat with fellow viewers, and look forward to top-secret features coming soon. Dive into the excitement and be part of the community!
