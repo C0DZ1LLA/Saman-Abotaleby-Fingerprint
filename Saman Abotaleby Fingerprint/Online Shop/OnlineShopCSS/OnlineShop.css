@@ -7,6 +7,41 @@ body {
     flex-direction: column;
     align-items: center;
 }
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    opacity: 0.2;
+    box-shadow: 
+        0 0 20px #00adb5, 
+        0 0 30px #00adb5, 
+        0 0 50px #00adb5, 
+        0 0 80px #00adb5;
+    animation: neon-background 5s infinite alternate;
+}
+@keyframes neon-background {
+    0%, 100% {
+        opacity: 0.1;
+        box-shadow: 
+            0 0 20px #00adb5, 
+            0 0 30px #00adb5, 
+            0 0 50px #00adb5, 
+            0 0 80px #00adb5;
+    }
+    50% {
+        opacity: 0.3;
+        box-shadow: 
+            0 0 40px #00adb5, 
+            0 0 60px #00adb5, 
+            0 0 90px #00adb5, 
+            0 0 120px #00adb5;
+    }
+}
 
 /* Dark Theme */
 body {
@@ -14,12 +49,37 @@ body {
     color: #ffffff;
 }
 
+/* Header and Footer Neon Border */
 header, footer {
-    width: 100%;
-    background-color: #1a1a1a;
-    padding: 20px 0;
-    text-align: center;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #00adb5;
+    text-shadow: 0 0 5px #00adb5, 0 0 10px #00adb5;
+}
+
+/* Button Neon Effect */
+button {
+    text-shadow: 0 0 5px #00adb5, 0 0 10px #00adb5;
+    box-shadow: 0 0 10px #00adb5, 0 0 20px #00adb5;
+}
+
+/* Light Theme Adjustments */
+body.light-theme::before {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 
+        0 0 20px #007a7c, 
+        0 0 30px #007a7c, 
+        0 0 50px #007a7c, 
+        0 0 80px #007a7c;
+    animation: neon-background 5s infinite alternate;
+}
+
+body.light-theme header, body.light-theme footer {
+    border-bottom: 2px solid #007a7c;
+    text-shadow: 0 0 5px #007a7c, 0 0 10px #007a7c;
+}
+
+body.light-theme button {
+    text-shadow: 0 0 5px #007a7c, 0 0 10px #007a7c;
+    box-shadow: 0 0 10px #007a7c, 0 0 20px #007a7c;
 }
 
 header h1, footer p {
