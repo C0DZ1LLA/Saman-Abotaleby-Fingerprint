@@ -1,0 +1,452 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Dark Theme */
+body {
+    background-color: #0f0f0f;
+    color: #ffffff;
+}
+
+header, footer {
+    width: 100%;
+    background-color: #1a1a1a;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #333;
+}
+
+header h1, footer p {
+    margin: 0;
+    color: #ffffff;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    margin: 0 15px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+#cart {
+    width: 80%;
+    background-color: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #333;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 0 15px rgba(0, 173, 181, 0.7);
+    position: relative;
+    z-index: 10;
+}
+
+#cart h2 {
+    margin: 0 0 20px 0;
+    color: #ffffff;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#cart p {
+    margin: 10px 0;
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+#cart-items {
+    margin-bottom: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #262626;
+    border: 1px solid #333;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 173, 181, 0.5);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.cart-item:hover {
+    box-shadow: 0 0 15px rgba(0, 173, 181, 0.7);
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.cart-item-details {
+    flex: 1;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.cart-item-details h3 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+.cart-item-details p {
+    margin: 5px 0;
+    color: #ffffff;
+}
+
+.cart-item-details button {
+    background-color: #00adb5;
+    border: none;
+    color: #1a1a1a;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cart-item-details button:hover {
+    background-color: #007a7c;
+}
+
+#checkout-btn {
+    display: block;
+    margin: 20px auto 0 auto;
+    padding: 10px 20px;
+    background-color: #00adb5;
+    border: none;
+    color: #1a1a1a;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#checkout-btn:hover {
+    background-color: #007a7c;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 20px 0;
+}
+
+.category {
+    margin-bottom: 20px;
+}
+
+.category h2 {
+    color: #ffffff;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.product {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 10px;
+    overflow: hidden;
+    width: calc(33.333% - 20px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.product img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product:hover img {
+    transform: scale(1.1);
+}
+
+.product h3 {
+    padding: 15px;
+    font-size: 1.2em;
+    text-align: center;
+    border-bottom: 1px solid #333;
+    color: #ffffff;
+}
+
+.product p {
+    padding: 10px 15px;
+    font-size: 1em;
+    color: #ffffff;
+}
+
+.product button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00adb5;
+    border: none;
+    color: #1a1a1a;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product button:hover {
+    background-color: #007a7c;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+    .product {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .product {
+        width: 100%;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #333;
+    margin-bottom: 10px;
+}
+
+.modal-content h2, .modal-content p {
+    margin: 10px 0;
+}
+
+#modal-add-to-cart {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #00adb5;
+    border: none;
+    color: #1a1a1a;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#modal-add-to-cart:hover {
+    background-color: #007a7c;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Theme and Language Switcher */
+#theme-switcher,
+#language-switcher {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+body.light-theme #cart {
+    background-color: #f0f0f0;
+    color: #000000; /* Ensure text is black in light theme */
+}
+
+body.light-theme #cart h2 {
+    color: #000000; /* Ensure text is black in light theme */
+}
+body.light-theme .cart-item {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    color: #000000; /* Ensure text is black in light theme */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme .cart-item:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+body.light-theme .cart-item-details {
+    color: #000000; /* Ensure text is black in light theme */
+}
+
+body.light-theme .cart-item-details h3 {
+    color: #000000; /* Ensure text is black in light theme */
+}
+
+body.light-theme .cart-item-details p {
+    color: #000000; /* Ensure text is black in light theme */
+}
+
+body.light-theme .cart-item-details button {
+    background-color: #e0e0e0;
+    color: #000000; /* Ensure text is black in light theme */
+}
+
+body.light-theme .cart-item-details button:hover {
+    background-color: #c0c0c0;
+}
+
+body.light-theme #cart p {
+    color: #000000; /* Ensure text is black in light theme */
+}
+
+body.light-theme .cart-item-details h3 {
+    color: #000000; /* Ensure text is black in light theme */
+}
+
+body.light-theme .cart-item-details p {
+    color: #000000; /* Ensure text is black in light theme */
+}
+
+#theme-switcher button,
+#language-switcher button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#theme-switcher button {
+    background-color: #007a7c;
+    color: #ffffff;
+}
+
+#theme-switcher button:hover {
+    background-color: #005f5f;
+}
+
+#language-switcher button {
+    background-color: #00adb5;
+    color: #ffffff;
+}
+
+#language-switcher button:hover {
+    background-color: #007a7c;
+}
+
+/* Light Theme Adjustments */
+body.light-theme .product {
+    background-color: #ffffff;
+    color: #000000; /* Ensure text is black in light theme */
+}
+
+body.light-theme .product h3 {
+    color: #000000; /* Ensure text is black in light theme */
+}
+
+body.light-theme .product p {
+    color: #000000; /* Ensure text is black in light theme */
+}
+
+body.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.light-theme header, body.light-theme footer, body.light-theme #cart {
+    background-color: #f0f0f0;
+    color: #000000;
+}
+
+body.light-theme header h1, body.light-theme footer p, body.light-theme #cart h2 {
+    color: #000000;
+}
+
+body.light-theme header nav a {
+    color: #000000;
+}
+
+body.light-theme .product {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.light-theme .modal-content {
+    background-color: #f0f0f0;
+    color: #000000;
+}
+
+body.light-theme #theme-switcher button {
+    background-color: #e0e0e0;
+    color: #000000;
+}
+
+body.light-theme #theme-switcher button:hover {
+    background-color: #c0c0c0;
+}
+
+body.light-theme #language-switcher button {
+    background-color: #d0e0e0;
+    color: #000000;
+}
+
+body.light-theme #language-switcher button:hover {
+    background-color: #a0c0c0;
+}

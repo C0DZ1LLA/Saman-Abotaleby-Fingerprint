@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ηλεκτρονικό Κατάστημα</title>
+    <link rel="stylesheet" href="OnlineShopCSS/OnlineShop.css" id="theme-stylesheet">
+</head>
+<div id="theme-switcher">
+    <button onclick="switchTheme('dark')">Σκούρο Θέμα</button>
+    <button onclick="switchTheme('light')">Φωτεινό Θέμα</button>
+</div>
+<div id="language-switcher">
+    <button onclick="switchLanguage('el')">Ελληνικά</button>
+    <button onclick="switchLanguage('en')">English</button>
+</div>
+<body>
+    <header>
+        <h1 id="shop-title" data-key="shop-title"> Ηλεκτρονικό Κατάστημα</h1>
+        <nav>
+            <a href="#electronics" class="nav-link" data-key="electronics">Ηλεκτρονικά</a>
+            <a href="#wearables" class="nav-link" data-key="wearables">Φορετά</a>
+            <a href="#drones" class="nav-link" data-key="drones">Μη Επανδρωμένα</a>
+            <a href="#smart-home" class="nav-link" data-key="smart-home">Έξυπνο Σπίτι</a>
+            <a href="#gaming" class="nav-link" data-key="gaming">Παιχνίδια</a>
+            <a href="#health" class="nav-link" data-key="health">Υγεία</a>
+            <a href="#fashion" class="nav-link" data-key="fashion">Μόδα</a>
+            <a href="#accessories" class="nav-link" data-key="accessories">Αξεσουάρ</a>
+            <a href="#toys" class="nav-link" data-key="toys">Παιχνίδια</a>
+            <a href="#office" class="nav-link" data-key="office">Γραφείο</a>
+        </nav>
+    </header>
+    <div id="cart">
+        <h2 id="cart-title" data-key="cart-title">Καλάθι</h2>
+        <div id="cart-items"></div>
+        <p id="cart-count">Αντικείμενα: 0</p>
+        <p id="cart-total">Σύνολο: €0.00</p>
+        <button id="checkout-btn" data-key="checkout">Ολοκλήρωση Αγοράς</button>
+    </div>
+    <div class="container" id="product-container">
+        <!-- Product categories will be dynamically generated -->
+    </div>
+    <footer>
+        <p>&copy; 2024 Φουτουριστικό Ηλεκτρονικό Κατάστημα. Όλα τα δικαιώματα διατηρούνται. | <a href="#">Πολιτική Απορρήτου</a> | <a href="#">Όροι Χρήσης</a></p>
+    </footer>
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-modal">&times;</span>
+            <img id="modal-image" src="" alt="Product Image">
+            <h2 id="modal-name"></h2>
+            <p id="modal-description"></p>
+            <p id="modal-price"></p>
+            <button id="modal-add-to-cart" data-key="add-to-cart">Προσθήκη στο Καλάθι</button>
+        </div>
+    </div>
+
+    <script src="OnlineShopJS/OnlineShop.js"></script>
+</body>
+</html>
